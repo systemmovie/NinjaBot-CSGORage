@@ -1,0 +1,17 @@
+{
+  "name": "NinjaBot",
+  "version": "1.0.0",
+  "description": "NinjaBot",
+  "main": "app.js",
+  "author": "Pedro Henrique",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron-prebuilt": "^1.0.2",
+    "nedb": "^1.8.0",
+    "nodemailer": "^2.3.2",
+    "socket.io": "^1.4.5",
+    "socket.io-client": "^1.4.5"
+  }
+}
