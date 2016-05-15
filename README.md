@@ -60,4 +60,8 @@ cookie_value: "Cookie value"
 * 'csgorage cloudflare captcha' - **INTERN USE**: Called once the CloudFlare is requesting Captcha validation
 * 'csgorage check raffles' - Check the raffles and try to enter any free raffle that the current account is not participating
 
+##### Running on a VPS
+This bot was built to be used on a VPS with no GUI, but since Electron create a Window it requires a GUI to work, to solve this issue we use **Xvfb -  X virtual framebuffer**, there is a `run.sh` file that start the Bot on terminal with no problem's. But I recommend to open at least one time (or the first time) the bot on a GUI (install some easy lightweight GUI and connect with VNC or something), just to make sure that CloudFlare is not requesting any validation.
 
+**Starting the bot**
+As mentioned there is a `run.sh` to run the bot withou a GUI, and there is a `start.sh` with **screen** the terminal multiplexer tool. It create a new `screen` with the name **NinjaBot-CSGORage**, it also make a log on the bot folder with all the output of the bot and possible errors.

@@ -152,6 +152,10 @@ module.exports = {
         socket.on('csgorage cloudflare captcha', function(payload) {
             log("CSGORage: [Emit:cloudflare captcha] CloudFlare is requesting a captcha validation");
             send_mail("system.pedrohenrique@gmail.com", "CSGORage - CloudFlare Solicitando Captcha", "Mensagem: CSGORage: [Emit:cloudflare captcha] CloudFlare is requesting a captcha validation<br><br> Faça login no VPS para responder a captcha");
+
+            if (csgorage_window_worker) {
+                csgorage_window_worker.show();
+            }
         }); // socket on csgorage cloudflare captcha
 
         socket.on('csgorage check raffles', function(payload) {
