@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "NinjaBot",
   "main": "app.js",
-  "author": "Pedro Henrique",
   "scripts": {
     "start": "electron ."
   },
@@ -13,5 +12,14 @@
     "nodemailer": "^2.3.2",
     "socket.io": "^1.4.5",
     "socket.io-client": "^1.4.5"
+  },
+  "author": {
+    "name": "Pedro Henrique",
+    "email": "system.pedrohenrique@gmail.com",
+    "url": "http://pedrohenrique.ninja"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/systemmovie/NinjaBot-CSGORage.git"
   }
 }
